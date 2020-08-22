@@ -70,8 +70,8 @@ class Person:
             i += 1
 
     def choose_magic(self):
+        print("Magic")
+        i = 1
         for spell in self.magic:
-            i = 1
-            print("Magic")
-            print(str(i) + ": ", spell["name"], "(cost: ", str(spell["mp"]) + "}")
+            print(str(i) + ": ", spell["name"], "(cost:", str(spell["cost"]) + " MP)")
             i += 1
